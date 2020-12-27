@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const http = require('http');
 const WebSocket = require('ws');
-
 const port = process.env.PORT || 6969;
 const server = http.createServer(express);
 const webSocketServer = new WebSocket.Server({ server: server });
